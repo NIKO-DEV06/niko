@@ -1,12 +1,14 @@
-*{
+*
+{
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
 }
+
 .header{
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/banner.png);
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -24,6 +26,7 @@ nav img{
 }
 
 .nav-links{
+	
 	flex: 1;
 	text-align: right;
 	cursor: pointer;
@@ -110,9 +113,8 @@ nav img{
 }
 .nav-links{
 	position: absolute;
-	background: #f44336;
-	height: 100vh;
-	width: 200px;
+	background: rgba(4,9,30,0.7);
+	
 	top: 0px;
 	right: 0px;
 	text-align: left;
@@ -129,6 +131,8 @@ nav img{
 
  }
 h1{
+
+	
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 36px;
 	font-weight: 600;
@@ -284,7 +288,7 @@ h3{
 	text-align: left;
 }
 .testimonial-col .fa{
-	color: #f44336;
+	color: #0fcc87;
 }
 
 .cta{
@@ -322,14 +326,16 @@ h3{
 color: #fff;
 }
 .icons .fa{
-color: #f44336;
+	height: 20px;
+	width: 20px;
+color: #0fcc87;
 margin: 0 13px;
 cursor: pointer;
-padding: 18px 0;
+padding: 10px 0;
 }
 
 .fa-heart-o{
-	color: #f44336;
+	color: #0fcc87;
 }
 
 
@@ -434,12 +440,74 @@ textarea{
 
 .btn:hover{
 	transition: 0.8s;
-    background-color: #f44336;
+    background-color: #0fcc87;
 }
 
 .field:focus{
     border: 2px solid rgba(30,85,250,0.47);
     background-color: #fff;
 }
+.menu-icon{
+	width: 25px;
+	cursor: pointer;
+	display: none;
+}
 
+ @media only screen and (max-width:700px){
+	.nav-links{
+    width: 100%;
+	position: absolute;
+	top: 75px;
+	right: 0;
+	z-index: 2;
+	}
+	.nav-links ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.nav-links ul li{
+		color: #fff;
+	}
+	.menu-icon{
+		display: block;
+	}
+	#menuList{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	.course h1{
+	 font-size: 20px;
+	}
+	.course-col{
+		flex-basis: 31%;
 
+	background: rgba(58, 89, 215, 0.164);
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	
+	}
+	.course-col h3{
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 15px;
+	}
+	.campus h1{
+		font-size: 20px;
+	}
+	.facilities h1{
+		font-size: 20px;
+	}
+	.testimonials h1{
+		font-size: 20px;
+	}
+	.contact h2{
+		font-size: 20px;
+	}
+	.map{
+		width: 350px;
+		height: 350px;
+	}
+ } 

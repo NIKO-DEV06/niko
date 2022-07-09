@@ -3,24 +3,26 @@
 <head>
      <meta name="viewport" content="with=device-width, initial-scale=1.0">
      <title>Ekinrin-Adde Community Development Association</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/0ecf681384.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" type="text/css" href="css/style.css">
-     <link rel="icon" href="favicon.ico?v=2">
+     <link rel="icon" href="favicon.ico">
 </head>
 <body>
 
      <section class="header">
+           
           <nav>
               
                <a href="index.html"><img src="IMG_3352.jpg"></a>
           <div class="nav-links">
-               <ul>
+               <ul id="menuList">
                     <li><a>HOME</li>
                     <li><a>ABOUT EKINRIN-ADDE</li>
                      <li><a>EVENTS</li>
                     <li><a>BLOG</li>
                     <li><a>CONTACT-US</li>
                </ul>
+               <img src="imgbin_white-menu-icon-png.png" class="menu-icon" onclick="togglemenu()">
           </div>
           </nav>
 
@@ -40,19 +42,19 @@
                          <div class="course-col">
                               <h3>Intermediate</h3>
                                <p> 
-                              Lorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belit.
+                              Lorem ospum dolor sit amet, consecteur adipiscing belitLorem osp
                          </p>
                          </div>
                           <div class="course-col">
                               <h3>Degree</h3>
                                <p> 
-                              Lorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belit.
+                              Lorem ospum dolor sit amet, consecteur adipiscing belitLorem os
                          </p>
                          </div>
                           <div class="course-col">
                               <h3>Post Graduate</h3>
                                <p> 
-                              Lorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belit.
+                              Lorem ospum dolor sit amet, consecteur adipiscing belitLorem osp
                          </p>
                          </div>
                          
@@ -97,38 +99,14 @@
 <!------ Facilities -------->
 
           <section class="facilities">
-               <h1>Our Facilities</h1>
-               <p>Lorem ospum dolor sit amet, consecteur adipiscing belit.</p>
-
-
-               <div class="row">
-                    <div class="facilities-col">
-                         
-                    <img src="IMG_3352.jpg">
-                    <h3>World Class Library</h3>
-                    <p>Lorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belit.</p>
-                    </div>
-
-                     <div class="facilities-col">
-                         
-                    <img src="IMG_3352.jpg">
-                    <h3>Largest Playground</h3>
-                    <p>Lorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belit.</p>
-                    </div>
-
-                     <div class="facilities-col">
-                         
-                    <img src="IMG_3352.jpg">
-                    <h3>Tasty and Yummy Delicacies</h3>
-                    <p>Lorem ospum dolor sit amet, consecteur adipiscing belitLorem ospum dolor sit amet, consecteur adipiscing belit.</p>
-                    </div>
-               </div>
+               <h1>LOCATION</h1>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31620.73252983617!2d5.849096353969003!3d7.8329781387718755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1048849d148341bd%3A0x9d44da355b87318!2s261103%2C%20Ekinrin-Adde!5e0!3m2!1sen!2sng!4v1657290935909!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
                
           </section>
 <hr>
           <!-----testimonials----->
           <section class="testimonials">
-                <h1>What Out Student Says</h1>
+                <h1>Hear what some have to say</h1>
                <p>Lorem ospum dolor sit amet, consecteur adipiscing belit.</p>
 
                <div class="row">
@@ -202,7 +180,20 @@
 </section>     
 
 
-
+<script>
+     var menuList = document.getElementById("menuList");
+     menuList.style.maxHeight = "0px";
+     function togglemenu(){
+          if(menuList.style.maxHeight == "0px")
+          {
+               menuList.style.maxHeight = "130px"
+          }
+          else
+          {
+               menuList.style.maxHeight = "0px"
+          }
+     }
+</script>
 
 </body>
 </html>
