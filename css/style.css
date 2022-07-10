@@ -507,7 +507,8 @@ textarea{
 		font-size: 20px;
 	}
 	.map{
-		width: 350px;
+		max-width: 100%;
+		width: 400px;
 		height: 350px;
 	}
 	.row{
